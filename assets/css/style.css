@@ -6,5 +6,22 @@
 
 
 body {
-    background: black;
+   
 }
+button {
+    color: black;
+    height: 10px;
+    width: 30px;
+    display: block;
+    margin-left: 50%;
+}
+/* Hearder styling */
+
+h1 {
+    color: black;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+/**/
