@@ -6,8 +6,41 @@
 
 
 body {
-   
+    
 }
+
+/* Hearder styling */
+
+h1 {
+    color: black;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main quiz container */
+
+#over_all_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#mian_quiz_container {
+    background: black;
+    height: 500px;
+    width: 75%;
+    text-align: center;
+    padding-top: 2.5%;
+}
+
+/* Image container */
+
+/* Answer Buttons */
+
 button {
     color: black;
     height: 10px;
@@ -15,13 +48,3 @@ button {
     display: block;
     margin-left: 50%;
 }
-/* Hearder styling */
-
-h1 {
-    color: black;
-    padding-top: 10%;
-    display: flex;
-    justify-content: center;
-}
-
-/**/
