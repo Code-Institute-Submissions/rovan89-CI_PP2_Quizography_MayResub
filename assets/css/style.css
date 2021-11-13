@@ -35,16 +35,27 @@ h1 {
     width: 75%;
     text-align: center;
     padding-top: 2.5%;
+    display: flex;
+    justify-content: center;
 }
 
 /* Image container */
 
 /* Answer Buttons */
 
-button {
+#button_group_container{
+    margin-top: 20%;
+    
+
+}
+
+.quiz_btns {
     color: black;
-    height: 10px;
-    width: 30px;
-    display: block;
-    margin-left: 50%;
+    background:red;
+    height: 30px;
+    width: 320px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
