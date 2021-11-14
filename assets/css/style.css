@@ -41,23 +41,31 @@ h1 {
     align-items: center;
 }
 
-/* Image container */
+/* Quiz Image  */
 
+img {
+    height: 250px;
+    width: 250px;
+    background: purple;
+}
 #main_image_container {
     background: white;
-    width: 100px;
-    height: 100px;
+    width: 25rem;
+    height: 25rem;
     display: flex;
-    
+    justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
-}
+
+
 
 /* Answer Buttons */
 
 #button_group_container{
-    margin-top: 20%;
-    
+    margin-top: 5%;
+    background: yellow;
+    margin-bottom: 5%;
 
 }
 
