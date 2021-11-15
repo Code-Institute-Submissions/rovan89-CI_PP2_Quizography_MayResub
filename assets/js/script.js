@@ -19,8 +19,13 @@ function loadQuiz() {
 }
 
 loadQuiz();
-console.log(quizBtns)
+console.log(loadQuiz)
 
-function nextQuestion {
-    
+function nextQuestion() {
+    let arrayOfAnswers = quizAnswers.length
+    for (let questionIncrementation = 0; questionIncrementation < arrayOfAnswers; questionIncrementation++ ) {
+        
+    }
 }
+    nextQuestion();
+    console.log(arrayOfAnswers[questionIncrementation]);
