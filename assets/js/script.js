@@ -10,7 +10,7 @@ let answerPosition = 0;
  * This function loads the image to the quiz
  */
 function loadQuiz() {
-    let answerOne = document.getElementById("answer_one")
+    let answerOne = document.getElementById("answer_one", "answer_two", "answer_three", "answer_four")
     answerOne.innerHTML = quizAnswers[answerPosition][0];
     let answerTwo = document.getElementById("answer_two")
     answerTwo.innerHTML = quizAnswers[answerPosition][1];
@@ -37,6 +37,6 @@ nextQuestion();
 console.log(answerPosition)
 
 function checkTheAnswer() {
-   
+
 }
 
