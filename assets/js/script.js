@@ -20,3 +20,7 @@ function loadQuiz() {
 
 loadQuiz();
 console.log(quizBtns)
+
+function nextQuestion {
+    
+}
