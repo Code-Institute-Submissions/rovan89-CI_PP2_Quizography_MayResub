@@ -14,8 +14,10 @@ let quizImages = [
 
 let answerPosition = 0;
 let imagePosition = 0;
-let userAnswer = document.getElementById("answer_one").innerHTML
+let userAnswer = []
 
+let nextQuestion = document.getElementsByClassName("quiz_btns");
+nextQuestion.addEventListener('click', checkTheAnswer);
 
 // Questions 
 
@@ -23,19 +25,6 @@ let userAnswer = document.getElementById("answer_one").innerHTML
  * checkTheAnswer function changes the color of the button/answer that has been clicked
  */
 function checkTheAnswer() {
-
-    if(userAnswer == correctAnswers.QuestionOneAnswer){
-        document.getElementById("answer_one").style.background = "green"
-    } else if (userAnswer == correctAnswers.QuestiontwoAnswer) {
-        document.getElementById("answer_two").style.background = "green"
-    } else if (userAnswer == correctAnswers.QuestionThreeAnswer) {
-        document.getElementById("answer_three").style.background = "green"
-    } else if (userAnswer == correctAnswers.QuestionFourAnswer) {
-        document.getElementById("answer_four").style.background = "green"
-    } else {
-        document.getElementsByClassName("quiz_btns").style.background = "red"
-    }
-    
-    
+    console.log('checking answer')
 }
 
