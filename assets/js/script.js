@@ -1,6 +1,9 @@
 // This is an array of the questions and their images
 let quizAnswers = [["Answer One!!!", "Answer Two", "Answer Three", "Answer Four"],["Answer One***", "Answer Two", "Answer Three", "Answer Four"]]
-let quizImages = ['<img src="assets/images/quiz-images/pexels-jf-valeriano-3609894.jpg" alt="Girl in a jacket" width="500" height="600">']
+let quizImages = [
+    '<img src="assets/images/quiz-images/pexels-jf-valeriano-3609894.jpg" alt="Girl in a jacket">',
+    '<img src="assets/images/quiz-images/pexels-pixabay-162994.jpg" alt="">'
+]
 let answerPosition = 0;
 let imagePosition = 0;
 
@@ -11,14 +14,16 @@ function loadQuizImage() {
     let showQuizImage = document.getElementById("main_image_container");
     showQuizImage.innerHTML = quizImages[0] ;   
 }
+
 loadQuizImage();
 function changeQuizImage() {
     let arrayOfImages = quizImages.length
     for (let i = 0; i < arrayOfImages; i++) {
-         imagePosition++;
+         imagePosition[i];
     }
     
 }
+console.log(loadQuizImage)
 
 
 
@@ -44,10 +49,11 @@ loadQuiz();
  * This function allows the program to change the index position in the loadQuiz function and iterate through the answer options
  */
 function nextQuestion() {
-    let arrayOfAnswers = quizAnswers.length
-    for (let i = 0; i < arrayOfAnswers; i++) {
-         answerPosition++;
+    let answerPosition = quizAnswers.length
+    for (let i = 0; i < answerPosition; i++) {
+         answerPosition[i];
     }
+    return answerPosition;
 }
 
 nextQuestion();
