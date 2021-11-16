@@ -1,65 +1,41 @@
 // This is an array of the questions and their images
-let quizAnswers = [["Answer One!!!", "Answer Two", "Answer Three", "Answer Four"],["Answer One***", "Answer Two", "Answer Three", "Answer Four"]]
+let quizAnswers = [["Answer One!!!", "Answer Two", "Answer Three", "Answer Four"],["Answer One***", "Answer Two", "Answer Three", "Answer Four"]];
+
+let correctAnswers = {
+    QuestionOneAnswer: "Answer Two",
+    QuestionTwoAnswer: "Answer One***",
+}
+console.log(correctAnswers.QuestionOneAnswer)
+
 let quizImages = [
     '<img src="assets/images/quiz-images/pexels-jf-valeriano-3609894.jpg" alt="Girl in a jacket">',
     '<img src="assets/images/quiz-images/pexels-pixabay-162994.jpg" alt="">'
-]
+];
+
 let answerPosition = 0;
 let imagePosition = 0;
+let userAnswer = document.getElementById("answer_one").innerHTML
 
 
 // Questions 
 
-function loadQuizImage() {
-    let showQuizImage = document.getElementById("main_image_container");
-    showQuizImage.innerHTML = quizImages[0] ;   
-}
-
-loadQuizImage();
-function changeQuizImage() {
-    let arrayOfImages = quizImages.length
-    for (let i = 0; i < arrayOfImages; i++) {
-         imagePosition[i];
-    }
-    
-}
-console.log(loadQuizImage)
-
-
-
-
 /**
- * This function loads the image to the quiz
+ * checkTheAnswer function changes the color of the button/answer that has been clicked
  */
-function loadQuiz() {
-    let answerOne = document.getElementById("answer_one")
-    answerOne.innerHTML = quizAnswers[answerPosition][0];
-    let answerTwo = document.getElementById("answer_two")
-    answerTwo.innerHTML = quizAnswers[answerPosition][1];
-    let answerThree = document.getElementById("answer_three")
-    answerThree.innerHTML = quizAnswers[answerPosition][2];
-    let answerFour = document.getElementById("answer_four")
-    answerFour.innerHTML = quizAnswers[answerPosition][3];
-    console.log(answerOne)
-}
-console.log(loadQuiz)
-loadQuiz();
-
-/**
- * This function allows the program to change the index position in the loadQuiz function and iterate through the answer options
- */
-function nextQuestion() {
-    let answerPosition = quizAnswers.length
-    for (let i = 0; i < answerPosition; i++) {
-         answerPosition[i];
-    }
-    return answerPosition;
-}
-
-nextQuestion();
-console.log(answerPosition)
-
 function checkTheAnswer() {
 
+    if(userAnswer == correctAnswers.QuestionOneAnswer){
+        document.getElementById("answer_one").style.background = "green"
+    } else if (userAnswer == correctAnswers.QuestiontwoAnswer) {
+        document.getElementById("answer_two").style.background = "green"
+    } else if (userAnswer == correctAnswers.QuestionThreeAnswer) {
+        document.getElementById("answer_three").style.background = "green"
+    } else if (userAnswer == correctAnswers.QuestionFourAnswer) {
+        document.getElementById("answer_four").style.background = "green"
+    } else {
+        document.getElementsByClassName("quiz_btns").style.background = "red"
+    }
+    
+    
 }
 
