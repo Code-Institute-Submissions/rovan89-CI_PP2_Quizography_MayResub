@@ -4,7 +4,7 @@ let questions = [
         answerOne: "Bond",
         answerTwo: "The Matrix",
         answerThree: "Happy Gilmore",
-        answerFour: "Ironman",
+        answerFour: "You"
     },
     {
         answerOne: "Thor",
@@ -19,29 +19,46 @@ let questions = [
         answerFour: ""
     },
 ]
+let testAnswers = Object.values(questions[0]);
+console.log("Test:" + testAnswers)
 
 
-    
+testNum = 0;
+function addOne(){
+   testNum = ++testNum;
+}
+console.log("Testing:" + testNum);
+
 function getQuestions() {
     for(let i = 0; i < questions.length; i++){
-        console.log(questions[i].answerOne)
-        }
+        console.log("Here:" + Object.entries(questions[i]));
+        } 
     }
-document.getElementById("next_btn").addEventListener('click', getQuestions)
+getQuestions();
 
+//document.getElementById("next_btn").addEventListener('click', getQuestions);
+let nextPosition = 0;
+function nextBtn(){
+    for(i = 0; i < questions.length; i++){
+        nextPosition = questions[i];
+    }
+nextPosition = questions[i];
+}
+console.log("NP: " + nextPosition)
 
 getQuestions();
 
 function insertQuestions() {
     let answerDivContainer = document.getElementById('button_group_container');
     answerDivContainer.innerHTML = `
-        <button class="quiz_btns" id="answer_one" onclick="checkUserAnswer()">${getQuestions[0].answerOne}</button>
-        <button class="quiz_btns" id="answer_two" onclick="checkUserAnswer()">${questions[1].answerTwo}</button>
-        <button class="quiz_btns" id="answer_three" onclick="checkUserAnswer()">${questions[2].answerThree}</button>
-        <button class="quiz_btns" id="answer_four"  onclick="checkUserAnswer()"></button>
+        <button class="quiz_btns" id="answer_one" onclick="checkUserAnswer()">${testAnswers[0]}</button>
+        <button class="quiz_btns" id="answer_two" onclick="checkUserAnswer()">${testAnswers[1]}</button>
+        <button class="quiz_btns" id="answer_three" onclick="checkUserAnswer()">${testAnswers[2]}</button>
+        <button class="quiz_btns" id="answer_four"  onclick="checkUserAnswer()">${testAnswers[3]}</button>
         `;
-        console.log(insertQuestions())
+        console.log(insertQuestions());
 }
+window.onload(insertQuestions());
 
 
 
