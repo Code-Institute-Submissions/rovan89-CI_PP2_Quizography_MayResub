@@ -13,40 +13,35 @@ let questions = [
         answerFour: "Captian America"
     },
     {
-        answerOne: "",
+        answerOne: "Hey",
         answerTwo: "",
         answerThree: "",
         answerFour: ""
     },
 ]
+
 let testAnswers = Object.values(questions[0]);
 console.log("Test:" + testAnswers)
 
-
-testNum = 0;
-function addOne(){
-   testNum = ++testNum;
-}
-console.log("Testing:" + testNum);
+let testNum = 0;
 
 function getQuestions() {
     for(let i = 0; i < questions.length; i++){
-        console.log("Here:" + Object.entries(questions[i]));
+       // testNum = [i];
+        testAnswers = Object.values(questions[i]);
         } 
     }
-getQuestions();
 
-//document.getElementById("next_btn").addEventListener('click', getQuestions);
-let nextPosition = 0;
-function nextBtn(){
-    for(i = 0; i < questions.length; i++){
-        nextPosition = questions[i];
-    }
-nextPosition = questions[i];
-}
-console.log("NP: " + nextPosition)
-
-getQuestions();
+let blah = document.getElementById('next_btn');
+blah.addEventListener("click", function() {
+    testNum++;
+    console.log(testNum)
+    console.log("Please change")
+});
+console.log(`Answer index position:${testNum}`);
+console.log("Answer text:" + testAnswers);
+console.log(blah);
+console.log(getQuestions())
 
 function insertQuestions() {
     let answerDivContainer = document.getElementById('button_group_container');
@@ -56,7 +51,7 @@ function insertQuestions() {
         <button class="quiz_btns" id="answer_three" onclick="checkUserAnswer()">${testAnswers[2]}</button>
         <button class="quiz_btns" id="answer_four"  onclick="checkUserAnswer()">${testAnswers[3]}</button>
         `;
-        console.log(insertQuestions());
+    
 }
 window.onload(insertQuestions());
 
@@ -65,14 +60,3 @@ window.onload(insertQuestions());
 
 
 
-function checkUserAnswer(){
-    for(let i = 0; i < questions.length; i++){
-        let userAnswer = document.getElementsByClassName("quiz_btns").innerHTML;
-        if(userAnswer == questions[i].answers){
-            
-            alert("It's working");
-        } else {
-            alert("else is working")
-        }
-    }
-}
