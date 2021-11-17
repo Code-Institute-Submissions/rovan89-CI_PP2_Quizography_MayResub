@@ -79,3 +79,16 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+/* Next Button */
+
+#next_btn {
+    color: black;
+    background:orange;
+    height: 30px;
+    width: 320px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
