@@ -1,11 +1,22 @@
 // This is an array of the questions and their images
 let questions = [
     {
-        image: '<img src="assets/images/quiz-images/pexels-jf-valeriano-3609894.jpg" alt="Girl in a jacket">',
-        answers: [
-            {text1: 'Bond', corrent: true},
-            {text2: '300', correct: false}
-        ]
+        answerOne: "Bond",
+        answerTwo: "The Matrix",
+        answerThree: "Happy Gilmore",
+        answerFour: "Ironman"
+    },
+    {
+        answerOne: "Thor",
+        answerTwo: "The Hulk",
+        answerThree: "Black Panther",
+        answerFour: "Captian America"
+    },
+    {
+        answerOne: "",
+        answerTwo: "",
+        answerThree: "",
+        answerFour: ""
     },
 ]
 
@@ -14,12 +25,11 @@ let questions = [
 function getQuestions() {
     for(let i = 0; i < questions.length; i++){
         console.log(questions[i])
-        for(const key of Object.values(questions[i])){
-            console.log(`${key} = ${questions[key][text1]}`)
         }
+    return
     }
 
-}
+
 getQuestions();
 
 function insertQuestions() {
