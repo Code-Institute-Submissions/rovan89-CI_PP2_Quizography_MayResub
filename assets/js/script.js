@@ -4,7 +4,7 @@ let questions = [
         answerOne: "Bond",
         answerTwo: "The Matrix",
         answerThree: "Happy Gilmore",
-        answerFour: "Ironman"
+        answerFour: "Ironman",
     },
     {
         answerOne: "Thor",
@@ -24,10 +24,10 @@ let questions = [
     
 function getQuestions() {
     for(let i = 0; i < questions.length; i++){
-        console.log(questions[i])
+        console.log(questions[i].answerOne)
         }
-    return
     }
+document.getElementById("next_btn").addEventListener('click', getQuestions)
 
 
 getQuestions();
@@ -35,13 +35,15 @@ getQuestions();
 function insertQuestions() {
     let answerDivContainer = document.getElementById('button_group_container');
     answerDivContainer.innerHTML = `
-        <button class="quiz_btns" id="answer_one" onclick="checkUserAnswer()">${questions.values()}</button>
-        <button class="quiz_btns" id="answer_two" onclick="checkUserAnswer()">Answer Two</button>
-        <button class="quiz_btns" id="answer_three" onclick="checkUserAnswer()">Answer Three</button>
-        <button class="quiz_btns" id="answer_four"  onclick="checkUserAnswer()">Answer Four</button>
+        <button class="quiz_btns" id="answer_one" onclick="checkUserAnswer()">${getQuestions[0].answerOne}</button>
+        <button class="quiz_btns" id="answer_two" onclick="checkUserAnswer()">${questions[1].answerTwo}</button>
+        <button class="quiz_btns" id="answer_three" onclick="checkUserAnswer()">${questions[2].answerThree}</button>
+        <button class="quiz_btns" id="answer_four"  onclick="checkUserAnswer()"></button>
         `;
+        console.log(insertQuestions())
 }
-window.DOMContentLoaded = insertQuestions();
+
+
 
 
 
