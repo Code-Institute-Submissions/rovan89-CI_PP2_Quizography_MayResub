@@ -32,28 +32,31 @@ function getQuestions() {
         } 
     }
 
+
 let blah = document.getElementById('next_btn');
 blah.addEventListener("click", function() {
     testNum++;
-    console.log(testNum)
-    console.log("Please change")
-});
+    let answerDivContainer = document.getElementById('button_group_container');
+    answerDivContainer.innerHTML = `
+        <button class="quiz_btns" id="answer_one" onclick="checkUserAnswer()">${testAnswers[testNum]}</button>
+        <button class="quiz_btns" id="answer_two" onclick="checkUserAnswer()">${testAnswers[testNum]}</button>
+        <button class="quiz_btns" id="answer_three" onclick="checkUserAnswer()">${testAnswers[testNum]}</button>
+        <button class="quiz_btns" id="answer_four"  onclick="checkUserAnswer()">${testAnswers[testNum]}</button>
+        `;
+    insertQuestions();
+    });
+    
+    console.log(testNum);
+    console.log("Please change");
+    insertQuestions();
+    console.log(insertQuestions());
+
 console.log(`Answer index position:${testNum}`);
 console.log("Answer text:" + testAnswers);
 console.log(blah);
 console.log(getQuestions())
 
-function insertQuestions() {
-    let answerDivContainer = document.getElementById('button_group_container');
-    answerDivContainer.innerHTML = `
-        <button class="quiz_btns" id="answer_one" onclick="checkUserAnswer()">${testAnswers[0]}</button>
-        <button class="quiz_btns" id="answer_two" onclick="checkUserAnswer()">${testAnswers[1]}</button>
-        <button class="quiz_btns" id="answer_three" onclick="checkUserAnswer()">${testAnswers[2]}</button>
-        <button class="quiz_btns" id="answer_four"  onclick="checkUserAnswer()">${testAnswers[3]}</button>
-        `;
-    
-}
-window.onload(insertQuestions());
+
 
 
 
