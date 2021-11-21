@@ -43,18 +43,28 @@ h1 {
     align-items: center;
 }
 
-/* User Name Input */
+/* User Name form */
 form {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 #user_name_container {
     background: green;
     color: black;
     width: 25rem;
-    height: 2rem;
+    height: 5rem;
    
+}
+
+/* Submit Button */
+#user_name_submit_button {
+    background: yellow;
+    color: black;
+    width: 10rem;
+    height: 2rem;
+    margin: 1%;
 }
 
 /* Quiz Image  */
