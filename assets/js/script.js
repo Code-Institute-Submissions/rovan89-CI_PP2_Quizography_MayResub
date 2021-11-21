@@ -12,6 +12,9 @@ let questions = [
 ]
 
 let count = 0;
+/**
+ * quiz answers add answrs to button options
+ */
 function quizAnswers(){
     
     console.log("This is count: " + count);
@@ -31,8 +34,15 @@ function quizAnswers(){
 console.log("Outside function: " + count);
 console.log("Why is console log not working?")
 
+
+//This array holds user names
+let userNames = [];
+
+/**
+ * addToUserNameList function adds user names to an array
+ */
 function addToUserNameList() {
-    
+    let userInput = document.getElementById("user_name").value;
 }
 
 
