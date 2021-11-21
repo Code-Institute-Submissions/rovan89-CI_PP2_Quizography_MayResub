@@ -11,9 +11,9 @@ let questions = [
     },
 ]
 
-
+let count = 0;
 function quizAnswers(){
-    let count = 0;
+    
     console.log("This is count: " + count);
     let questionOne = document.getElementById("answer_one");
     let questionTwo = document.getElementById("answer_two");
