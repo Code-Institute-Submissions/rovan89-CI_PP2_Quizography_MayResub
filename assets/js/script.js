@@ -36,7 +36,7 @@ console.log("Why is console log not working?")
 
 
 //This array holds user names
-let userNames = [];
+let userName = [];
 
 /**
  * addToUserNameList function adds user names to an array
@@ -44,8 +44,13 @@ let userNames = [];
 function addToUserNameList() {
     let userInput = document.getElementById("user_name").value;
     userNames.push(userInput);
+    console.log(userName)
+
+    let changeToUserName = document.getElementById("user_name_container");
+    changeToUserName.innerHTML = `<h2>${userName}</h2>`
 }
 console.log(userNames)
+console.log(addToUserNameList)
 
 
 
