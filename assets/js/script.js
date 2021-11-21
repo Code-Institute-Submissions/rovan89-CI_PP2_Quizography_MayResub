@@ -31,7 +31,9 @@ function quizAnswers(){
 console.log("Outside function: " + count);
 console.log("Why is console log not working?")
 
-
+function addToUserNameList() {
+    
+}
 
 
 
