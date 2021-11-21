@@ -43,8 +43,9 @@ let userNames = [];
  */
 function addToUserNameList() {
     let userInput = document.getElementById("user_name").value;
+    userNames.push(userInput);
 }
-
+console.log(userNames)
 
 
 
