@@ -12,29 +12,49 @@ let questions = [
 ]
 
 let count = 0;
+let nextBtnClicked = document.getElementById("next_btn");
 /**
- * quiz answers add answrs to button options
+ * The countIncrement function adds one each time the function is called
+ */
+function conutIncrement() {
+    count++;
+}
+nextBtnClicked.addEventListener('click', conutIncrement);
+
+/**
+ * quiz answers add answers to button options
  */
 function quizAnswers(){
-    
-    console.log("This is count: " + count);
     let questionOne = document.getElementById("answer_one");
     let questionTwo = document.getElementById("answer_two");
     let questionThree = document.getElementById("answer_three");
     let questionFour = document.getElementById("answer_four");
-    count++;
     for( let i = 0; i < questions.length; i++){
         questionOne.innerHTML = questions[count].answer[0];
         questionTwo.innerHTML = questions[count].answer[1];
         questionThree.innerHTML = questions[count].answer[2];
         questionFour.innerHTML = questions[count].answer[3];
     }
-    console.log("Count at end of function" + count);
 }
-console.log("Outside function: " + count);
-console.log("Why is console log not working?")
 
+/**
+ * 
+ */
+function checkAnswer(){
+    if() {
 
+    }
+}
+
+let score = 0;
+/**
+ * The scoreTracker function increments the score if the user has correctly answered
+ */
+function scoreTracker() {
+    if() {
+
+    }
+}
 //This array holds user names
 let userName = [];
 
@@ -43,13 +63,14 @@ let userName = [];
  */
 function addToUserNameList() {
     let userInput = document.getElementById("user_name").value;
-    userNames.push(userInput);
+    userName.push(userInput);
     console.log(userName)
 
     let changeToUserName = document.getElementById("user_name_container");
-    changeToUserName.innerHTML = `<h2>${userName}</h2>`
+    changeToUserName.innerHTML = `<h2>${userName}</h2>
+                                  <p>score: </p>`
 }
-console.log(userNames)
+console.log(userName)
 console.log(addToUserNameList)
 
 
