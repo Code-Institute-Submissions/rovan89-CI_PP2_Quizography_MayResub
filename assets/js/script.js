@@ -11,6 +11,11 @@ let questions = [
     },
 ]
 
+let questionOne = document.getElementById("answer_one");
+let questionTwo = document.getElementById("answer_two");
+let questionThree = document.getElementById("answer_three");
+let questionFour = document.getElementById("answer_four");
+
 let count = 0;
 let nextBtnClicked = document.getElementById("next_btn");
 /**
@@ -25,10 +30,6 @@ nextBtnClicked.addEventListener('click', conutIncrement);
  * quiz answers add answers to button options
  */
 function quizAnswers(){
-    let questionOne = document.getElementById("answer_one");
-    let questionTwo = document.getElementById("answer_two");
-    let questionThree = document.getElementById("answer_three");
-    let questionFour = document.getElementById("answer_four");
     for( let i = 0; i < questions.length; i++){
         questionOne.innerHTML = questions[count].answer[0];
         questionTwo.innerHTML = questions[count].answer[1];
@@ -40,9 +41,17 @@ function quizAnswers(){
 /**
  * 
  */
-function checkAnswer(){
-    if() {
-
+function checkUserAnswer(){
+    if("answer_one".clicked == questions.correctAnswer) {
+        answer_one.style.backgroundColor = "green";
+    } else if ("answer_two".clicked == questions.correctAnswer){
+        answer_two.style.backgroundColor = "green";
+    } else if ("answer_three".clicked == questions.correctAnswer) {
+        answer_three.style.backgroundColor = "green";
+    } else if ("answer_four".clicked == questions.correctAnswer) {
+        answer_four.style.backgroundColor = "green";
+    } else {
+        
     }
 }
 
@@ -51,9 +60,7 @@ let score = 0;
  * The scoreTracker function increments the score if the user has correctly answered
  */
 function scoreTracker() {
-    if() {
-
-    }
+   
 }
 //This array holds user names
 let userName = [];
