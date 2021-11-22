@@ -15,7 +15,7 @@ let questionOne = document.getElementById("answer_one");
 let questionTwo = document.getElementById("answer_two");
 let questionThree = document.getElementById("answer_three");
 let questionFour = document.getElementById("answer_four");
-
+let buttonsClass = document.getElementsByClassName("quiz_btns");
 let count = 0;
 let nextBtnClicked = document.getElementById("next_btn");
 /**
@@ -38,23 +38,21 @@ function quizAnswers(){
     }
 }
 
+var newjib = questions.map(function (correctAnswer));
+console.log(newjib)
+
+console.log(questions[count][correctAnswer])
 /**
  * 
  */
 function checkUserAnswer(){
-    if("answer_one".clicked == questions.correctAnswer) {
-        answer_one.style.backgroundColor = "green";
-    } else if ("answer_two".clicked == questions.correctAnswer){
-        answer_two.style.backgroundColor = "green";
-    } else if ("answer_three".clicked == questions.correctAnswer) {
-        answer_three.style.backgroundColor = "green";
-    } else if ("answer_four".clicked == questions.correctAnswer) {
-        answer_four.style.backgroundColor = "green";
-    } else {
-        
+    if(questionOne.innerHTML == questions.correctAnswer) {
+        alert("button was clicked");
+    } else if(questionTwo == questions.correctAnswer){
+        alert("button Two was clicked");
     }
 }
-
+buttonsClass.addEventListener('click', checkUserAnswer)
 let score = 0;
 /**
  * The scoreTracker function increments the score if the user has correctly answered
