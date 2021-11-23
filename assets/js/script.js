@@ -35,6 +35,7 @@ function quizAnswers(){
         questionTwo.innerHTML = questions[count].answer[1];
         questionThree.innerHTML = questions[count].answer[2];
         questionFour.innerHTML = questions[count].answer[3];
+        checkAnswer = questions[count].correctAnswer[count];
     }
 }
 
@@ -46,9 +47,14 @@ function checkUserAnswer(clicked_id){
     console.log(clicked_id);
     let clicked_value = document.getElementById(clicked_id).innerHTML;
     console.log(clicked_value);
+    if(clicked_value == questions[count].correctAnswer)
+        console.log("Done")
     }
+console.log("Here " + questions[count].correctAnswer);
 
-console.log(checkAnswer)
+
+// Find a way to get the correct answer from each question and print it below
+console.log("BAM " + Object.values(questions[count]));
 let score = 0;
 /**
  * The scoreTracker function increments the score if the user has correctly answered
