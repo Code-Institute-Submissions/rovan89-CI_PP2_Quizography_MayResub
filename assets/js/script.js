@@ -38,21 +38,17 @@ function quizAnswers(){
     }
 }
 
-var newjib = questions.map(function (correctAnswer));
-console.log(newjib)
-
-console.log(questions[count][correctAnswer])
+let checkAnswer;
 /**
  * 
  */
-function checkUserAnswer(){
-    if(questionOne.innerHTML == questions.correctAnswer) {
-        alert("button was clicked");
-    } else if(questionTwo == questions.correctAnswer){
-        alert("button Two was clicked");
+function checkUserAnswer(clicked_id){
+    console.log(clicked_id);
+    let clicked_value = document.getElementById(clicked_id).innerHTML;
+    console.log(clicked_value);
     }
-}
-buttonsClass.addEventListener('click', checkUserAnswer)
+
+console.log(checkAnswer)
 let score = 0;
 /**
  * The scoreTracker function increments the score if the user has correctly answered
