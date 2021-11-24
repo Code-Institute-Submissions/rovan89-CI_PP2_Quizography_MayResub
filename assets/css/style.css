@@ -103,14 +103,15 @@ img {
 
 #button_group_container{
     margin-top: 2%;
-    background: yellow;
     margin-bottom: 2%;
 
 }
 
 .quiz_btns {
-    color: black;
-    background:blue;
+    border: 3px solid gold;
+    border-radius: 50px;
+    background: navy;
+    color: white;
     height: 30px;
     width: 320px;
     margin-top: 2%;

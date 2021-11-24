@@ -93,10 +93,10 @@ function checkUserAnswer(clicked_id){
  * originalColor resets the color to white for the next set of answers
  */
  function originalColor(){
-    questionOne.style.backgroundColor = "white"
-    questionTwo.style.backgroundColor = "white"
-    questionThree.style.backgroundColor = "white"
-    questionFour.style.backgroundColor = "white"
+    questionOne.style.backgroundColor = "navy"
+    questionTwo.style.backgroundColor = "navy"
+    questionThree.style.backgroundColor = "navy"
+    questionFour.style.backgroundColor = "navy"
 }
 
 /**
