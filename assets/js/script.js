@@ -59,7 +59,6 @@ function quizAnswers(){
 
 console.log("global newVal: " + newVal )
 
-
 /**
  * 
  */
@@ -76,13 +75,18 @@ function checkUserAnswer(clicked_id){
     }
     console.log("inside: " + newVal)
 }
-console.log("Here " + questions[count].correctAnswer);
+
+/**
+ * originalColor resets the color to white for the next set of answers
+ */
+ function originalColor(){
+    questionOne.style.backgroundColor = "white"
+    questionTwo.style.backgroundColor = "white"
+    questionThree.style.backgroundColor = "white"
+    questionFour.style.backgroundColor = "white"
+}
 
 
-
-originalColor();
-// Find a way to get the correct answer from each question and print it below
-console.log("BAM " + Object.values(questions[count]));
 let score = 0;
 /**
  * The scoreTracker function increments the score if the user has correctly answered
