@@ -15,6 +15,16 @@ let questions = [
         answer: ["Lockstock", "RocknRolla", "Snatch", "The Gentelmen"],
         correctAnswer: "Snatch"
     },
+    {
+        image: "assets/images/quiz-images/movie_four.jpg",
+        answer: ["The Untouchables", "American Gangster", "Black Mass", "Goodfellas"],
+        correctAnswer: "Goodfellas"
+    },
+    {
+        image: "assets/images/quiz-images/movie_five.jpg",
+        answer: ["50/50", "Don Jon", "500 Days Of Summer", "10 Things I hate About You"],
+        correctAnswer: "500 Days Of Summer"
+    },
 ]
 let questionImage = document.getElementById("main_image_container");
 let questionOne = document.getElementById("answer_one");
