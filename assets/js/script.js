@@ -1,15 +1,17 @@
 // This is an array of the questions and their images
 let questions = [
     {
-        image: "assets/images/quiz-images/pexels-jf-valeriano-3609894.jpg",
+        image: "assets/images/quiz-images/movie_one.PNG",
         answer: ["Bond", "The Matrix", "Happy Gilmore", "You"],
-        correctAnswer: "Bond"
+        correctAnswer: "The Matrix"
     },
     {
+        image: "assets/images/quiz-images/movie_two.jpg",
         answer: ["Thor", "The Hulk", "Black Panther", "Captian America"],
         correctAnswer: "The Hulk"
     },
     {
+        image: "assets/images/quiz-images/movie_one.PNG",
         answer: ["Lockstock", "RocknRolla", "Snatch", "The Gentelmen"],
         correctAnswer: "Snatch"
     },
@@ -73,6 +75,7 @@ function checkUserAnswer(clicked_id){
     } else {
         clicked_answer.style.backgroundColor = "red";
     }
+   
 }
 
 /**
