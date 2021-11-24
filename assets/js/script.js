@@ -19,8 +19,12 @@ let questionTwo = document.getElementById("answer_two");
 let questionThree = document.getElementById("answer_three");
 let questionFour = document.getElementById("answer_four");
 let buttonsClass = document.getElementsByClassName("quiz_btns");
-let count = 0;
 let nextBtnClicked = document.getElementById("next_btn");
+let checkAnswer;
+let newVal = {};
+let count = 0;
+let score = 0;
+
 /**
  * The countIncrement function adds one each time the function is called
  */
@@ -31,18 +35,6 @@ nextBtnClicked.addEventListener('click', conutIncrement);
 nextBtnClicked.addEventListener('click', originalColor);
 
 /**
- * originalColor resets the color to white for the next set of answers
- */
-function originalColor(){
-    questionOne.style.backgroundColor = "white"
-    questionTwo.style.backgroundColor = "white"
-    questionThree.style.backgroundColor = "white"
-    questionFour.style.backgroundColor = "white"
-}
-
-let checkAnswer;
-let newVal = {};
-/**
  * quiz answers add answers to button options
  */
 function quizAnswers(){
@@ -52,24 +44,24 @@ function quizAnswers(){
         questionThree.innerHTML = questions[count].answer[2];
         questionFour.innerHTML = questions[count].answer[3];
         newVal = questions[count].correctAnswer;
-        console.log("local newAnswer :" + newVal)
     }
-    console.log("Semi-local: "+ newVal)
 }
 
-console.log("global newVal: " + newVal )
 
 /**
  * 
  */
 function checkUserAnswer(clicked_id){
-    console.log("ID: " + clicked_id);
     let clicked_value = document.getElementById(clicked_id).innerHTML;
     let clicked_answer = document.getElementById(clicked_id);
-    console.log("user clicked: " + clicked_value);
+    let keep_score = document.getElementById("score_count")
+    
+    console.log(score)
     if(clicked_value === newVal){
         clicked_answer.style.backgroundColor = "green";
-        console.log("inside IF: " + clicked_id)
+        score++
+        keep_score.innerHTML = score;
+        
     } else {
         clicked_answer.style.backgroundColor = "red";
     }
@@ -86,8 +78,6 @@ function checkUserAnswer(clicked_id){
     questionFour.style.backgroundColor = "white"
 }
 
-
-let score = 0;
 /**
  * The scoreTracker function increments the score if the user has correctly answered
  */
@@ -106,8 +96,7 @@ function addToUserNameList() {
     console.log(userName)
 
     let changeToUserName = document.getElementById("user_name_container");
-    changeToUserName.innerHTML = `<h2>${userName}</h2>
-                                  <p>score: </p>`
+    changeToUserName.innerHTML = `<h2>${userName}</h2>`
 }
 //console.log(userName)
 //console.log(addToUserNameList)

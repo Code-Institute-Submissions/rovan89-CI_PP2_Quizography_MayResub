@@ -66,6 +66,12 @@ form {
     height: 2rem;
     margin: 1%;
 }
+/* Score counter */
+#score_count {
+    width: 50%;
+    height: 30px;
+    background: orange;
+}
 
 /* Quiz Image  */
 
