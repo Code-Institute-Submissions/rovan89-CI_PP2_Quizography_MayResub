@@ -71,7 +71,8 @@ function insertImage(){
     console.log(questionImage.innerHTML)
 }
 /**
- * 
+ * This functions checks if the user has given the correct answer
+ * Also changes the color based on answer
  */
 function checkUserAnswer(clicked_id){
     let clicked_value = document.getElementById(clicked_id).innerHTML;

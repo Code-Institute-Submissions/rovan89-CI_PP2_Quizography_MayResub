@@ -61,16 +61,18 @@ form {
 
 /* Submit Button */
 .submit_btn {
-    background: yellow;
-    color: black;
+    border: 2px solid gold;
+    border-radius: 50px;
+    background: navy;
+    color: white;
     width: 10rem;
     height: 2rem;
     margin: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
+
 /* Score counter */
 #score_count {
     width: 50%;
