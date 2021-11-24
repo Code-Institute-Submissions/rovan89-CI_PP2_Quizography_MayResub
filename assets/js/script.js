@@ -13,7 +13,7 @@ let questions = [
         correctAnswer: "Snatch"
     },
 ]
-
+let questionImage = document.getElementById("quiz_image");
 let questionOne = document.getElementById("answer_one");
 let questionTwo = document.getElementById("answer_two");
 let questionThree = document.getElementById("answer_three");
@@ -47,7 +47,6 @@ function quizAnswers(){
     }
 }
 
-
 /**
  * 
  */
@@ -56,16 +55,13 @@ function checkUserAnswer(clicked_id){
     let clicked_answer = document.getElementById(clicked_id);
     let keep_score = document.getElementById("score_count")
     
-    console.log(score)
     if(clicked_value === newVal){
         clicked_answer.style.backgroundColor = "green";
         score++
         keep_score.innerHTML = score;
-        
     } else {
         clicked_answer.style.backgroundColor = "red";
     }
-    console.log("inside: " + newVal)
 }
 
 /**
