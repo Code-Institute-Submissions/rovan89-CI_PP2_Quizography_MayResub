@@ -1,7 +1,7 @@
 // This is an array of the questions and their images
 let questions = [
     {
-        image: "/workspace/Guess_The_Movie/assets/images/quiz-images/pexels-jf-valeriano-3609894.jpg",
+        image: "assets/images/quiz-images/pexels-jf-valeriano-3609894.jpg",
         answer: ["Bond", "The Matrix", "Happy Gilmore", "You"],
         correctAnswer: "Bond"
     },
@@ -14,16 +14,19 @@ let questions = [
         correctAnswer: "Snatch"
     },
 ]
+let questionImage = document.getElementById("main_image_container");
 let questionOne = document.getElementById("answer_one");
 let questionTwo = document.getElementById("answer_two");
 let questionThree = document.getElementById("answer_three");
 let questionFour = document.getElementById("answer_four");
 let buttonsClass = document.getElementsByClassName("quiz_btns");
 let nextBtnClicked = document.getElementById("next_btn");
+
 let checkAnswer;
 let newVal = {};
 let count = 0;
 let score = 0;
+let newImg;
 
 /**
  * The countIncrement function adds one each time the function is called
@@ -33,25 +36,28 @@ function conutIncrement() {
 }
 nextBtnClicked.addEventListener('click', conutIncrement);
 nextBtnClicked.addEventListener('click', originalColor);
+nextBtnClicked.addEventListener('click', insertImage);
 
 /**
  * quiz answers add answers to button options
  */
 function quizAnswers(){
-    let questionImage = document.getElementById("quiz_image");
     for( let i = 0; i < questions.length; i++){
-        let newImg = questions[count].image
-        console.log(newImg)
-        questionImage.innerHTML = `<img id="quiz_image" src="${newImg}"> `;
         console.log(questionImage.innerHTML)
         questionOne.innerHTML = questions[count].answer[0];
         questionTwo.innerHTML = questions[count].answer[1];
         questionThree.innerHTML = questions[count].answer[2];
         questionFour.innerHTML = questions[count].answer[3];
         newVal = questions[count].correctAnswer;
+        newImg = questions[count].image
+        console.log(newImg)
     }
 }
 
+function insertImage(){
+    questionImage.innerHTML = `<img id="quiz_image" src="${newImg}" alt="#"> `;
+    console.log(questionImage.innerHTML)
+}
 /**
  * 
  */
