@@ -1,5 +1,4 @@
 // This is an array of the questions and their images
-console.log("Hi")
 let questions = [
     {
         answer: ["Bond", "The Matrix", "Happy Gilmore", "You"],
@@ -8,6 +7,10 @@ let questions = [
     {
         answer: ["Thor", "The Hulk", "Black Panther", "Captian America"],
         correctAnswer: "The Hulk"
+    },
+    {
+        answer: ["Lockstock", "RocknRolla", "Snatch", "The Gentelmen"],
+        correctAnswer: "Snatch"
     },
 ]
 
@@ -25,7 +28,12 @@ function conutIncrement() {
     count++;
 }
 nextBtnClicked.addEventListener('click', conutIncrement);
+nextBtnClicked.addEventListener('click', originalColor);
 
+
+
+let checkAnswer;
+let newVal = {};
 /**
  * quiz answers add answers to button options
  */
@@ -35,23 +43,36 @@ function quizAnswers(){
         questionTwo.innerHTML = questions[count].answer[1];
         questionThree.innerHTML = questions[count].answer[2];
         questionFour.innerHTML = questions[count].answer[3];
-        checkAnswer = questions[count].correctAnswer[count];
+        newVal = questions[count].correctAnswer;
+        console.log("local newAnswer :" + newVal)
     }
+    console.log("Semi-local: "+ newVal)
 }
 
-let checkAnswer;
+console.log("global newVal: " + newVal )
+
+
 /**
  * 
  */
 function checkUserAnswer(clicked_id){
-    console.log(clicked_id);
+    console.log("ID: " + clicked_id);
     let clicked_value = document.getElementById(clicked_id).innerHTML;
-    console.log(clicked_value);
-    if(clicked_value == questions[count].correctAnswer)
-        console.log("Done")
+    let clicked_answer = document.getElementById(clicked_id);
+    console.log("user clicked: " + clicked_value);
+    if(clicked_value === newVal){
+        clicked_answer.style.backgroundColor = "green";
+        console.log("inside IF: " + clicked_id)
+    } else {
+        clicked_answer.style.backgroundColor = "red";
     }
+    console.log("inside: " + newVal)
+}
 console.log("Here " + questions[count].correctAnswer);
 
+function originalColor(){
+    quiz_btns.backgroundColor = "white"
+}
 
 // Find a way to get the correct answer from each question and print it below
 console.log("BAM " + Object.values(questions[count]));
@@ -77,8 +98,8 @@ function addToUserNameList() {
     changeToUserName.innerHTML = `<h2>${userName}</h2>
                                   <p>score: </p>`
 }
-console.log(userName)
-console.log(addToUserNameList)
+//console.log(userName)
+//console.log(addToUserNameList)
 
 
 
