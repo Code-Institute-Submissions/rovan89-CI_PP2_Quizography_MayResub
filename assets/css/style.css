@@ -54,7 +54,7 @@ form {
     background: green;
     color: black;
     width: 25rem;
-    height: 5rem;
+    height: 4rem;
    
 }
 
@@ -87,7 +87,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 
@@ -95,9 +95,9 @@ img {
 /* Answer Buttons */
 
 #button_group_container{
-    margin-top: 5%;
+    margin-top: 2%;
     background: yellow;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 
 }
 
@@ -119,8 +119,16 @@ img {
     background:orange;
     height: 30px;
     width: 320px;
-    margin-top: 2%;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Radio Buttons */
+.radio_btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
 }
