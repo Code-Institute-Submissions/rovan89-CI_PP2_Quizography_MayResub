@@ -21,8 +21,9 @@ h1 {
     justify-content: center;
 }
 
-h3 {
+h3, h2 {
     color: white;
+    margin-top: 2%;
 }
 
 /* Main quiz container */
@@ -140,7 +141,8 @@ img {
 }
 /* Feedback form container */
 #feedback_form {
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
    
 }
 

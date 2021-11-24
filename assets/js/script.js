@@ -67,7 +67,7 @@ function quizAnswers(){
 }
 
 function insertImage(){
-    questionImage.innerHTML = `<img id="quiz_image" src="${newImg}" alt="#"> `;
+    questionImage.innerHTML = `<img id="quiz_image" src=" ${newImg}" alt="#"> `;
     console.log(questionImage.innerHTML)
 }
 /**
@@ -117,7 +117,7 @@ function addToUserNameList() {
     console.log(userName)
 
     let changeToUserName = document.getElementById("user_name_container");
-    changeToUserName.innerHTML = `<h2>${userName}</h2>`
+    changeToUserName.innerHTML = `<h2> ${ userName}</h2>`
 }
 //console.log(userName)
 //console.log(addToUserNameList)
