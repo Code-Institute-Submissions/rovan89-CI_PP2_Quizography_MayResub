@@ -11,7 +11,7 @@ let questions = [
         correctAnswer: "The Hulk"
     },
     {
-        image: "assets/images/quiz-images/movie_one.PNG",
+        image: "assets/images/quiz-images/movie_three.jpg",
         answer: ["Lockstock", "RocknRolla", "Snatch", "The Gentelmen"],
         correctAnswer: "Snatch"
     },
