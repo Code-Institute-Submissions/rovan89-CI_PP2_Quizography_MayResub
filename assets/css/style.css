@@ -8,12 +8,14 @@
 body {
     display: flex;
     flex-direction: column;
+    background: black;
+
 }
 
 /* Hearder styling */
 
 h1 {
-    color: black;
+    color: white;
     padding-top: 5%;
     display: flex;
     justify-content: center;
@@ -32,7 +34,7 @@ h1 {
 }
 
 #mian_quiz_container {
-    background: lightblue;
+    background: black;
     height: 500px;
     width: 75%;
     text-align: center;
@@ -52,10 +54,10 @@ form {
 }
 
 #user_name_container {
-    background: green;
     color: black;
     width: 25rem;
     height: 4rem;
+    margin-bottom: 5%;
    
 }
 
@@ -67,18 +69,19 @@ form {
     color: white;
     width: 10rem;
     height: 2rem;
-    margin: 1%;
+    margin: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /* Score counter */
-#score_count {
+#score_count, p {
     width: 50%;
     height: 30px;
     background: orange;
 }
+
 
 /* Quiz Image  */
 
@@ -132,6 +135,11 @@ img {
     justify-content: center;
     align-items: center;
 }
+/* Feedback form container */
+#feedback_form {
+    margin-top: 2%;
+   
+}
 
 /* Radio Buttons */
 .radio_btns {
@@ -139,4 +147,39 @@ img {
     justify-content: center;
     align-items: center;
     margin-left: 2%;
+    
 }
+
+label {
+    color: white;
+}
+@media only screen and (max-width: 1300px) {
+/* Feedback Form */
+    #feedback_form {
+      
+        padding-top: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+/* Main Quiz Container */
+    #mian_quiz_container {
+        margin-top: 20px;
+        height: 420px;
+    }
+
+    #user_name_container {
+        margin-bottom: 5%;
+    }
+
+    /* Image Container */
+    #main_image_container {
+        
+        width: 20rem;
+       
+    }
+    /* score */
+    p {
+        margin-top: 20%;
+    }
+  }
