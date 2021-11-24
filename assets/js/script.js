@@ -30,7 +30,15 @@ function conutIncrement() {
 nextBtnClicked.addEventListener('click', conutIncrement);
 nextBtnClicked.addEventListener('click', originalColor);
 
-
+/**
+ * originalColor resets the color to white for the next set of answers
+ */
+function originalColor(){
+    questionOne.style.backgroundColor = "white"
+    questionTwo.style.backgroundColor = "white"
+    questionThree.style.backgroundColor = "white"
+    questionFour.style.backgroundColor = "white"
+}
 
 let checkAnswer;
 let newVal = {};
@@ -70,10 +78,9 @@ function checkUserAnswer(clicked_id){
 }
 console.log("Here " + questions[count].correctAnswer);
 
-function originalColor(){
-    quiz_btns.backgroundColor = "white"
-}
 
+
+originalColor();
 // Find a way to get the correct answer from each question and print it below
 console.log("BAM " + Object.values(questions[count]));
 let score = 0;
