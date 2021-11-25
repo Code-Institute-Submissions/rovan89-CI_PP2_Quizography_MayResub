@@ -9,8 +9,10 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
 
 - Username submission section
     - This section allows the user to enter their name and will appear on the Top of the screen as the game is being run
+![Image of username submission section](assets/images/readme-images/Capture.PNG)
 - Scoring section
     -The scoring section keeps track of the users score based on the answers they have submitted
+![Image of scoring system](assets/images/readme-images/scoringsystem.PNG)
 - Quiz section
     - The quiz section holds the main quiz which consists of the image and answer options
     - The image will change every time the user clicks the next button and moves on to the next question
