@@ -20,5 +20,6 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
 ![Image of quiz section](assets/images/readme-images/main-quiz-section.PNG)
 - Quiz Rating section
     - The rating section allows users to rate the quiz from 1-5 based on their experience. This feedback will also help on improving the quiz in the future.
+![Image of rating section](assets/images/readme-images/rating-section.PNG)
 
 
