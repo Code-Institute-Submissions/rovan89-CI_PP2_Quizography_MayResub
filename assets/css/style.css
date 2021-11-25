@@ -14,11 +14,16 @@ body {
 
 /* Hearder styling */
 
-h1 {
+h1, #instructions {
     color: white;
     padding-top: 5%;
     display: flex;
     justify-content: center;
+}
+
+#instructions {
+    padding-bottom: 3%;
+    margin-top: 0;
 }
 
 h3, h2 {
@@ -152,8 +157,6 @@ img {
     justify-content: center;
     align-items: center;
     margin-right: 3%;
-    padding-right: 1%;
-    
 }
 
 label {

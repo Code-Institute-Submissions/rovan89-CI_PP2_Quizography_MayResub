@@ -22,4 +22,20 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
     - The rating section allows users to rate the quiz from 1-5 based on their experience. This feedback will also help on improving the quiz in the future.
 ![Image of rating section](assets/images/readme-images/rating-section.PNG)
 
+## Validator Testing 
+
+- HTML
+ - No errors returned when checking site through W3C Validator
+![Image of HTML validation](assets/images/readme-images/html-val.PNG)
+
+- CSS
+
+- Javascript
+    - No errors found when passing site through Jshint validator
+        - There are 7 functions in this file.
+        - Function with the largest signature take 1 arguments, while the median is 0.
+        - Largest function has 9 statements in it, while the median is 4.
+        - The most complex function has a cyclomatic complexity value of 2 while the median is 1.
+
+
 
