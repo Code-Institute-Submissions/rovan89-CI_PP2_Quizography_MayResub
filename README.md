@@ -39,5 +39,8 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
         - Largest function has 9 statements in it, while the median is 4.
         - The most complex function has a cyclomatic complexity value of 2 while the median is 1.
 
-
-
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+    - In the GitHub repository, navigate to the Settings tab
+    - From the source section drop-down menu, select the Master Branch
+    - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+Link to live site:  https://rovan89.github.io/Guess_The_Movie/ 
