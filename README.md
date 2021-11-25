@@ -17,6 +17,7 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
     - The quiz section holds the main quiz which consists of the image and answer options
     - The image will change every time the user clicks the next button and moves on to the next question
     - The answers section holds four different answer options to choose from. If the user clicks the correct answer the selection button will turn green and a point will be added to their overall score, if incorrect the button will turn red and the user will not gain a point.
+![Image of quiz section](assets/images/readme-images/main-quiz-section.PNG)
 - Quiz Rating section
     - The rating section allows users to rate the quiz from 1-5 based on their experience. This feedback will also help on improving the quiz in the future.
 
