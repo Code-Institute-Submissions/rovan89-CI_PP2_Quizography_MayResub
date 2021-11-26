@@ -37,6 +37,9 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
         - Largest function has 9 statements in it, while the median is 4.
         - The most complex function has a cyclomatic complexity value of 2 while the median is 1.
 
+- Lighthouse
+![Image of lighthouse report](assets/images/readme-images/lighthouse.PNG)
+
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
     - In the GitHub repository, navigate to the Settings tab
     - From the source section drop-down menu, select the Master Branch

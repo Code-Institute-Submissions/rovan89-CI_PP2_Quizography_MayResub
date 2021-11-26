@@ -82,6 +82,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer
 }
 
 /* Score counter */
@@ -130,6 +131,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer
 }
 
 /* Next Button */
@@ -143,6 +145,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer
 }
 /* Feedback form container */
 #feedback_form {
@@ -157,6 +160,7 @@ img {
     justify-content: center;
     align-items: center;
     margin-right: 3%;
+    cursor: pointer
 }
 
 label {
