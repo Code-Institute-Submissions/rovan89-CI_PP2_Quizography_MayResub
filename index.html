@@ -10,10 +10,12 @@
     <title>Guess The Movie</title>
 </head>
 <body>
+    <!-- Header contains title and instructions-->
     <header>
         <h1>Guess The Movie</h1>
         <h2 id="instructions">Click the next button below to begin</h2>
     </header>
+    <!-- The below form allows user to enter a username -->
     <form>
         <div id="user_name_container">
             <label for="user_name">Enter User Name: </label>
@@ -23,18 +25,23 @@
     </form>
     <div id="over_all_container">
         <div id="mian_quiz_container">
+            <!-- The below section keeps track of the users score -->
             <p>Score:</p>
             <div id="score_count">0</div>
+            <!-- The main_image_container div holds the images for the quiz -->
             <div id="main_image_container">
                 <img id="quiz_image" src="assets/images/quiz-images/guess_the_movie.jpg" alt="Guess the movie image">
             </div>
+            <!-- The below buttons are the answer option for the quiz -->
             <div id="button_group_container">
                 <button class="quiz_btns" id="answer_one" onclick="checkUserAnswer(this.id)" aria-label="Answer one Button"></button>
                 <button class="quiz_btns" id="answer_two" onclick="checkUserAnswer(this.id)" aria-label="Answer two Button"></button>
                 <button class="quiz_btns" id="answer_three" onclick="checkUserAnswer(this.id)" aria-label="Answer three Button"></button>
                 <button class="quiz_btns" id="answer_four"  onclick="checkUserAnswer(this.id)" aria-label="Answer four Button"></button>
             </div>
+            <!-- The next button moves onto the next question -->
             <div id="next_btn" onclick="quizAnswers()">Next</div>
+            <!-- The section below is for user feedback -->
             <h3>Why Not Rate Us?</h3>
             <form id="feedback_form">
                 <label for="rating_1">1</label>
