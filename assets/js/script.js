@@ -32,6 +32,7 @@ var questionThree = document.getElementById("answer_three");
 var questionFour = document.getElementById("answer_four");
 var nextBtnClicked = document.getElementById("next_btn");
 
+var userName = [];
 var newVal = {};
 var count = 0;
 var score = 0;
@@ -62,7 +63,9 @@ function quizAnswers(){
         console.log(newImg);
     }
 }
-
+/**
+ * This function adds the image to the question
+ */
 function insertImage(){
     questionImage.innerHTML = `<img id="quiz_image" src=" ${newImg}" alt="#"> `;
     console.log(questionImage.innerHTML);
@@ -95,10 +98,6 @@ function checkUserAnswer(clicked_id){
     questionThree.style.backgroundColor = "navy";
     questionFour.style.backgroundColor = "navy";
 }
-
-
-//This array holds user names
-var userName = [];
 
 /**
  * addToUserNameList function adds user names to an array
