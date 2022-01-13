@@ -58,22 +58,36 @@ h3, h2 {
 }
 
 /* User Name form */
-form {
+
+#outer_user_name_container {
     width: 100%;
+    height: 100vh;
+    background: blue;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 
-#user_name_container {
-    color: black;
-    width: 25rem;
-    height: 4rem;
-    margin-bottom: 5%;
-   
+form {
+    position: relative;
+    top: 20%;
+    height: 300px;
+    border: 5px solid #FFFF00;
+    background: pink;
+}
+
+#user_name {
+    background: black;
 }
 
 /* Submit Button */
+
+.btn_container {
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
 .submit_btn {
     border: 2px solid gold;
     border-radius: 50px;

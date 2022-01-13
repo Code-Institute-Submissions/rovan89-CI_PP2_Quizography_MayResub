@@ -10,10 +10,12 @@
 <body>
     <div id="outer_user_name_container">
         <form>
-            <div id="inner_user_name_container">
+            <div class="inner_user_name_container">
                 <label for="user_name">Enter User Name: </label>
                 <input type="text" id="user_name">
-                <button type="submit" class="submit_btn" id="user_name_submit_button" onclick="addToUserNameList()" aria-label="User name submit button">Submit</button>
+                <div class="btn_container">
+                    <button type="submit" class="submit_btn" id="user_name_submit_button" onclick="addToUserNameList()" aria-label="User name submit button">Submit</button>
+                </div>
             </div>
         </form>
     </div>
