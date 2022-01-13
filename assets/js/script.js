@@ -39,6 +39,10 @@ var score = 0;
 var newImg;
 
 /**
+ *  This section create the intial 
+ */
+
+/**
  * The countIncrement function adds one each time the function is called
  */
 function conutIncrement() {
