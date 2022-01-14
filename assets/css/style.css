@@ -33,29 +33,7 @@ h3, h2 {
     color: white;
     margin-top: 2%;
 }
-
-/* Main quiz container */
-
-#over_all_container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1%;
-    padding-bottom: 5%;
-}
-
-#mian_quiz_container {
-    background: black;
-    height: 500px;
-    width: 75%;
-    text-align: center;
-    padding-top: 2.5%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+/*-------------------------------------------------------------index.html----------*/
 
 /* User Name form */
 
@@ -118,6 +96,59 @@ form .user_name_label {
     align-items: center;
     cursor: pointer
 }
+
+/*-------------------------------------------------------------quiz_instructions.html----------*/
+
+.main_quiz_instructions_container {
+    background: pink;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.main_quiz_instructions_container, .play_quiz_btn, .instructions_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.instructions_container {
+    background: blue;
+    height: 50vh;
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.play_quiz_btn {
+    margin-top: 200px;
+}
+
+
+/* Main quiz container */
+
+#over_all_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
+#mian_quiz_container {
+    background: black;
+    height: 500px;
+    width: 75%;
+    text-align: center;
+    padding-top: 2.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* Score counter */
 #score_count, p {
