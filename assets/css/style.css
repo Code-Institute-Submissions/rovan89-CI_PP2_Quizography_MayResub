@@ -121,8 +121,18 @@ form .user_name_label {
     padding-bottom: 50px;
 }
 
+.instructions_container p {
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .play_quiz_btn {
-    margin-top: 200px;
+    margin-top: 150px;
+    margin-left: 0;
 }
 
 
@@ -259,5 +269,15 @@ label {
     /* score */
     p {
         margin-top: 20%;
+    }
+/*-------------------------------------------------------------quiz_instructions.html----------*/
+
+    .instructions_container p {
+        margin-top: 0;
+    }
+
+    .instructions_container {
+        height: 70vh;
+        width: 90%;
     }
   }
