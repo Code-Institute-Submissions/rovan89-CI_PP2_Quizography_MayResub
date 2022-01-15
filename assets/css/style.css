@@ -16,10 +16,13 @@ body {
 }
 
 /* Hearder styling */
-
+header {
+    height: 300px;
+    display: block;
+}
 h1, #instructions {
     color: white;
-    padding-top: 5%;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
 }
@@ -135,7 +138,7 @@ form .user_name_label {
     margin-left: 0;
 }
 
-
+/*-------------------------------------------------------------quiz.html----------*/
 /* Main quiz container */
 
 #over_all_container {
