@@ -22,22 +22,22 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
 
 ## Validator Testing 
 
-- HTML
+### HTML
     - No errors returned when checking site through W3C Validator
 ![Image of HTML validation](assets/images/readme-images/html-val.PNG)
 
-- CSS
+### CSS
     - No errors found when stie was run through W3C CSS Validator
 ![Image of CSS validator](assets/images/readme-images/css-val.PNG)
 
-- Javascript
+### Javascript
     - No errors found when passing site through Jshint validator
         - There are 7 functions in this file.
         - Function with the largest signature take 1 arguments, while the median is 0.
         - Largest function has 9 statements in it, while the median is 4.
         - The most complex function has a cyclomatic complexity value of 2 while the median is 1.
 
-- Lighthouse
+### Lighthouse
 ![Image of lighthouse report](assets/images/readme-images/lighthouse.PNG)
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
@@ -45,3 +45,8 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
     - From the source section drop-down menu, select the Master Branch
     - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 Link to live site:  https://rovan89.github.io/Guess_The_Movie/ 
+
+## Bugs
+| **Feature / Function** | **Expected Result** | **Actual Result** | **Action** |
+|-------------|------------|---------------------|-------------------|
+|Click chosen answer| Answer changes colour to green and one is added to the score| Colour of answer does turn green but it keeps adding scores every time the user clicks the correct answer. The user can keep selecting answers until they get the question correct| Create functions to disable quiz buttons once an answer has been selected|

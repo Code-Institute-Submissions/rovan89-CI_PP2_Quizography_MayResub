@@ -56,6 +56,7 @@ nextBtnClicked.addEventListener('click', insertImage);
  * quiz answers add answers to button options
  */
 function quizAnswers(){
+    enableQuizBtns()
     for( var i = 0; i < questions.length; i++){
         console.log(questionImage.innerHTML);
         questionOne.innerHTML = questions[count].answer[0];
@@ -92,7 +93,9 @@ function checkUserAnswer(clicked_id){
     }
     disableQuizBtns()
 }
-
+/**
+ * These functions disable and enable the quiz buttons
+ */
 function disableQuizBtns() {
     questionOne.disabled = true;
     questionTwo.disabled = true;
@@ -106,6 +109,7 @@ function enableQuizBtns() {
     questionThree.disabled = false;
     questionFour.disabled = false;
 }
+
 
 /**
  * originalColor resets the color to white for the next set of answers
