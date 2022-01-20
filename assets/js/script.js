@@ -90,7 +90,21 @@ function checkUserAnswer(clicked_id){
     } else {
         clicked_answer.style.backgroundColor = "red";
     }
-   
+    disableQuizBtns()
+}
+
+function disableQuizBtns() {
+    questionOne.disabled = true;
+    questionTwo.disabled = true;
+    questionThree.disabled = true;
+    questionFour.disabled = true;
+}
+
+function enableQuizBtns() {
+    questionOne.disabled = false;
+    questionTwo.disabled = false;
+    questionThree.disabled = false;
+    questionFour.disabled = false;
 }
 
 /**
