@@ -39,8 +39,15 @@ var score = 0;
 var newImg;
 
 /**
- *  This section create the intial 
+ *  This function changes the button at the end of the quiz
  */
+function startQuizBtn(){
+
+}
+
+function newQuizBtn(){
+
+}
 
 /**
  * The countIncrement function adds one each time the function is called

@@ -9,7 +9,9 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
 - As the site owner, I want to take an input of a username for each user.
 - As the site owner, I want to receive feedback from the user.
 
-
+### User 
+- As a first time site user, I want to easily understand the premis on the quiz.
+- As the site user, I want to test my geography knowledge.
 
 ## Features
 
@@ -27,25 +29,29 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
     - The answers section holds four different answer options to choose from. If the user clicks the correct answer the selection button will turn green and a point will be added to their overall score, if incorrect the button will turn red and the user will not gain a point.
 ![Image of quiz section](assets/images/readme-images/main-quiz-section.PNG)
 - Quiz Rating section
-    - The rating section allows users to rate the quiz from 1-5 based on their experience. This feedback will also help on improving the quiz in the future.
+- The rating section allows users to rate the quiz from 1-5 based on their experience. This feedback will also help on improving the quiz in the future.
 ![Image of rating section](assets/images/readme-images/rating-section.PNG)
 
 ## Validator Testing 
 
 ### HTML
-    - No errors returned when checking site through W3C Validator
+
 ![Image of HTML validation](assets/images/readme-images/html-val.PNG)
 
+- No errors returned when checking site through W3C Validator
+
+
+
 ### CSS
-    - No errors found when stie was run through W3C CSS Validator
+- No errors found when stie was run through W3C CSS Validator
 ![Image of CSS validator](assets/images/readme-images/css-val.PNG)
 
 ### Javascript
-    - No errors found when passing site through Jshint validator
-        - There are 7 functions in this file.
-        - Function with the largest signature take 1 arguments, while the median is 0.
-        - Largest function has 9 statements in it, while the median is 4.
-        - The most complex function has a cyclomatic complexity value of 2 while the median is 1.
+- No errors found when passing site through Jshint validator
+    - There are 7 functions in this file.
+    - Function with the largest signature take 1 arguments, while the median is 0.
+    - Largest function has 9 statements in it, while the median is 4.
+    - The most complex function has a cyclomatic complexity value of 2 while the median is 1.
 
 ### Lighthouse
 ![Image of lighthouse report](assets/images/readme-images/lighthouse.PNG)
@@ -60,3 +66,4 @@ Link to live site:  https://rovan89.github.io/Guess_The_Movie/
 | **Feature / Function** | **Expected Result** | **Actual Result** | **Action** |
 |-------------|------------|---------------------|-------------------|
 |Click chosen answer| Answer changes colour to green and one is added to the score| Colour of answer does turn green but it keeps adding scores every time the user clicks the correct answer. The user can keep selecting answers until they get the question correct| Create functions to disable quiz buttons once an answer has been selected|
+|When the game ends the user can start a new game| The quiz ends and the user can click the button and start a new game| The quiz ends and until the user gives feedback the game can't continue| ***********************************|
