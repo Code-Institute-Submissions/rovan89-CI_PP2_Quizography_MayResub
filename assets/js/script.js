@@ -45,10 +45,16 @@ function startQuizBtn(){
     nextBtnClicked.innerHTML = "Next Question";
 }
 
-function newQuizBtn(){
-
+function countQuestions(){
+    let question = 1;
+    for (question in questions) {
+        question++
+      }
+      return question;
 }
 
+countQuestions()
+console.log(countQuestions())
 /**
  * The countIncrement function adds one each time the function is called
  */
