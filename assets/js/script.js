@@ -42,7 +42,7 @@ var newImg;
  *  This function changes the button at the end of the quiz
  */
 function startQuizBtn(){
-
+    nextBtnClicked.innerHTML = "Next Question";
 }
 
 function newQuizBtn(){
@@ -63,6 +63,7 @@ nextBtnClicked.addEventListener('click', insertImage);
  * quiz answers add answers to button options
  */
 function quizAnswers(){
+    startQuizBtn()
     enableQuizBtns()
     for( var i = 0; i < questions.length; i++){
         console.log(questionImage.innerHTML);
