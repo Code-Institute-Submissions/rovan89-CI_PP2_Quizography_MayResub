@@ -38,14 +38,11 @@ var count = 0;
 var score = 0;
 var newImg;
 
-/**
- *  This function changes the button at the end of the quiz
- */
-function startQuizBtn(){
-    nextBtnClicked.innerHTML = "Next Question";
-}
 
-function countQuestions(){
+/**
+ * This function counts the amount of questions the questions array
+ */
+ function countQuestions(){
     let question = 1;
     for (question in questions) {
         question++
@@ -54,12 +51,22 @@ function countQuestions(){
 }
 
 countQuestions()
-console.log(countQuestions())
+console.log("Outside function: ",countQuestions())
+
+/**
+ *  This function changes the button at the end of the quiz
+ */
+function nextQuestionBtn(){
+    nextBtnClicked.innerHTML = "Next Question";
+}
+
+
 /**
  * The countIncrement function adds one each time the function is called
  */
 function conutIncrement() {
     count++;
+    return count;
 }
 nextBtnClicked.addEventListener('click', conutIncrement);
 nextBtnClicked.addEventListener('click', originalColor);
@@ -69,8 +76,9 @@ nextBtnClicked.addEventListener('click', insertImage);
  * quiz answers add answers to button options
  */
 function quizAnswers(){
-    startQuizBtn()
+    nextQuestionBtn()
     enableQuizBtns()
+    playAgainBtn()
     for( var i = 0; i < questions.length; i++){
         console.log(questionImage.innerHTML);
         questionOne.innerHTML = questions[count].answer[0];
@@ -147,5 +155,21 @@ function addToUserNameList() {
     changeToUserName.innerHTML = `<h2> ${ userName}</h2>`;
 }
 
+function playAgainBtn() {
+    let QuestionCount = countQuestions()
+    console.log("Inside function: ",countQuestions())
+    console.log("Inside function count: ",count)
+    if(QuestionCount == conutIncrement){
+        nextBtnClicked.innerHTML = "Play Again!";
+        console.log("inside if function: ",countQuestions())
+        console.log("inside if count: ",count)
+        console.log("Inside if countQuestions: ",count)
+    }
+}
+console.log("Outside if countQuestions: ",count)
+console.log("Outside function count>>>: ",count)
+playAgainBtn()
+
+conutIncrement
 
 
