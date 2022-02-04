@@ -66,6 +66,7 @@ function nextQuestionBtn(){
  */
 function conutIncrement() {
     count++;
+    playAgainBtn()
     return count;
 }
 nextBtnClicked.addEventListener('click', conutIncrement);
@@ -78,7 +79,6 @@ nextBtnClicked.addEventListener('click', insertImage);
 function quizAnswers(){
     nextQuestionBtn()
     enableQuizBtns()
-    playAgainBtn()
     for( var i = 0; i < questions.length; i++){
         console.log(questionImage.innerHTML);
         questionOne.innerHTML = questions[count].answer[0];
@@ -123,6 +123,8 @@ function disableQuizBtns() {
     questionTwo.disabled = true;
     questionThree.disabled = true;
     questionFour.disabled = true;
+    nextBtnClicked.disabled = true;
+    return true
 }
 
 function enableQuizBtns() {
@@ -130,8 +132,15 @@ function enableQuizBtns() {
     questionTwo.disabled = false;
     questionThree.disabled = false;
     questionFour.disabled = false;
+    nextBtnClicked.disabled = false;
+    return false
 }
 
+if(enableQuizBtns() == false){
+    playAgainBtn()
+} else if(disableQuizBtns() == true){
+
+}
 
 /**
  * originalColor resets the color to white for the next set of answers
@@ -152,7 +161,7 @@ function addToUserNameList() {
     console.log(userName);
 
     var changeToUserName = document.getElementById("user_name_container");
-    changeToUserName.innerHTML = `<h2> ${ userName}</h2>`;
+    changeToUserName.innerHTML = `<h2> ${userName}</h2>`;
 }
 
 function playAgainBtn() {
@@ -168,7 +177,7 @@ function playAgainBtn() {
 }
 console.log("Outside if countQuestions: ",count)
 console.log("Outside function count>>>: ",count)
-playAgainBtn()
+
 
 conutIncrement
 
