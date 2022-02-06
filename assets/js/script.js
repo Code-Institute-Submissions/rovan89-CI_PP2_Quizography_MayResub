@@ -37,6 +37,7 @@ var newVal = {};
 var count = 0;
 var score = 0;
 var newImg;
+let arrayCount = 0;
 
 
 /**
@@ -89,6 +90,7 @@ function quizAnswers(){
         newImg = questions[count].image;
         console.log(newImg);
     }
+    playAgainBtn()
 }
 /**
  * This function adds the image to the question
@@ -165,18 +167,13 @@ function addToUserNameList() {
 }
 
 function playAgainBtn() {
-    let QuestionCount = countQuestions()
-    console.log("Inside function: ",countQuestions())
-    console.log("Inside function count: ",count)
-    if(QuestionCount == conutIncrement){
-        nextBtnClicked.innerHTML = "Play Again!";
-        console.log("inside if function: ",countQuestions())
-        console.log("inside if count: ",count)
-        console.log("Inside if countQuestions: ",count)
-    }
+    if(nextBtnClicked && arrayCount < questions.length){
+        arrayCount++;
+            console.log(arrayCount)
+        }
 }
-console.log("Outside if countQuestions: ",count)
-console.log("Outside function count>>>: ",count)
+
+
 
 
 conutIncrement
