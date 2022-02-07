@@ -7,7 +7,7 @@ var questions = [
     {
         image: "assets/images/quiz-images/movie_two.jpg",
         answer: ["Thor", "The Hulk", "Black Panther", "Captian America"],
-        correctAnswer: "The Hulk"
+        correctAnswer: "Black Panther"
     },
     {
         image: "assets/images/quiz-images/movie_three.jpg",
@@ -37,22 +37,6 @@ var newVal = {};
 var count = 0;
 var score = 0;
 var newImg;
-let arrayCount = 0;
-
-
-/**
- * This function counts the amount of questions the questions array
- */
- function countQuestions(){
-    let question = 1;
-    for (question in questions) {
-        question++
-      }
-      return question;
-}
-
-countQuestions()
-console.log("Outside function: ",countQuestions())
 
 /**
  *  This function changes the button at the end of the quiz
@@ -81,16 +65,13 @@ function quizAnswers(){
     nextQuestionBtn()
     enableQuizBtns()
     for( var i = 0; i < questions.length; i++){
-        console.log(questionImage.innerHTML);
         questionOne.innerHTML = questions[count].answer[0];
         questionTwo.innerHTML = questions[count].answer[1];
         questionThree.innerHTML = questions[count].answer[2];
         questionFour.innerHTML = questions[count].answer[3];
         newVal = questions[count].correctAnswer;
         newImg = questions[count].image;
-        console.log(newImg);
     }
-    playAgainBtn()
 }
 /**
  * This function adds the image to the question
@@ -138,12 +119,6 @@ function enableQuizBtns() {
     return false
 }
 
-if(enableQuizBtns() == false){
-    playAgainBtn()
-} else if(disableQuizBtns() == true){
-
-}
-
 /**
  * originalColor resets the color to white for the next set of answers
  */
@@ -167,14 +142,17 @@ function addToUserNameList() {
 }
 
 function playAgainBtn() {
-    if(nextBtnClicked && arrayCount < questions.length){
-        arrayCount++;
-            console.log(arrayCount)
+    if(questions.length == count){
+        nextBtnClicked.innerHTML = "Play again!";
+        if(nextBtnClicked){
+            console.log("Play again has been clicked")
         }
+    }
 }
 
 
 
+console.log("length: ", questions.length)
 
 conutIncrement
 
