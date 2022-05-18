@@ -32,6 +32,7 @@ var questionThree = document.getElementById("answer_three");
 var questionFour = document.getElementById("answer_four");
 var nextBtnClicked = document.getElementById("next_btn");
 
+var gameOverImage = "assets/images/quiz-images/game_over.jpg";
 var userName = [];
 var newVal = {};
 var count = 0;
@@ -51,9 +52,11 @@ function nextQuestionBtn(){
  */
 function conutIncrement() {
     count++;
-    playAgainBtn()
+    console.log("count", count)
     return count;
 }
+
+
 nextBtnClicked.addEventListener('click', conutIncrement);
 nextBtnClicked.addEventListener('click', originalColor);
 nextBtnClicked.addEventListener('click', insertImage);
@@ -73,13 +76,20 @@ function quizAnswers(){
         newImg = questions[count].image;
     }
 }
+
 /**
  * This function adds the image to the question
  */
 function insertImage(){
-    questionImage.innerHTML = `<img id="quiz_image" src=" ${newImg}" alt="#"> `;
+    if(questions.length +1 == count ){
+        nextBtnClicked.innerHTML = "Play again!";
+        questionImage.innerHTML = `<img id="quiz_image" src=" ${gameOverImage}" alt="#"> `;
+    }else{
+        questionImage.innerHTML = `<img id="quiz_image" src=" ${newImg}" alt="#"> `;
+    }
     console.log(questionImage.innerHTML);
 }
+
 /**
  * This functions checks if the user has given the correct answer
  * Also changes the color based on answer
@@ -141,7 +151,7 @@ function addToUserNameList() {
     changeToUserName.innerHTML = `<h2> ${userName}</h2>`;
 }
 
-function playAgainBtn() {
+/*function playAgainBtn() {
     if(questions.length == count){
         nextBtnClicked.innerHTML = "Play again!";
         if(nextBtnClicked){
@@ -149,10 +159,14 @@ function playAgainBtn() {
         }
     }
 }
+*/
 
+
+    
 
 
 console.log("length: ", questions.length)
+console.log("count: ", count)
 
 conutIncrement
 
