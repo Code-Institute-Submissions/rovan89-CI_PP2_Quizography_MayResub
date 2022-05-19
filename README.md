@@ -40,8 +40,6 @@ Guess The Movie quiz is designed to test the user knowledge of movies based on s
 
 - No errors returned when checking site through W3C Validator
 
-
-
 ### CSS
 - No errors found when stie was run through W3C CSS Validator
 ![Image of CSS validator](assets/images/readme-images/css-val.PNG)
