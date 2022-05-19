@@ -65,5 +65,5 @@ Link to live site:  https://rovan89.github.io/Guess_The_Movie/
 ## Bugs
 | **Feature / Function** | **Expected Result** | **Actual Result** | **Action** |
 |-------------|------------|---------------------|-------------------|
-|Click chosen answer| Answer changes colour to green and one is added to the score| Colour of answer does turn green but it keeps adding scores every time the user clicks the correct answer. The user can keep selecting answers until they get the question correct| Create functions to disable quiz buttons once an answer has been selected|
-|When the game ends the user can start a new game| The quiz ends and the user can click the button and start a new game| The quiz ends and until the user gives feedback the game can't continue| ***********************************|
+| Click chosen answer | Clicking an answer changes the colour to either green or red depending on the result, one point is added to the score if the user answered correctly. | Colour of the users answer changes appropriately. If the user keeps clicking the correct answer the score will continue to be incremented. Also The user can keep selecting answers until they find the correct answer | Create functions to disable quiz buttons once an answer has been selected |
+| Play Again button | The quiz ends and the user can click the button to start a new game | The quiz ends and until the user gives feedback the game can't continue | Created a function to restet the game after the Plat Again button has been clicked |
