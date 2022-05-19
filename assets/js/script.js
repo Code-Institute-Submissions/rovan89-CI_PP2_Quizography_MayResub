@@ -49,12 +49,26 @@ function nextQuestionBtn(){
     resetGame()
 }
 
+/* This function changes the size of the play button */
+function nextBtnSize() {
+    if(count == 1 || questions.length +1 == count){
+        nextBtnClicked.style.transform = 'scale(1.5,1.5)'
+        nextBtnClicked.style.marginTop = '40px';
+        nextBtnClicked.style.marginBottom = '40px';
+        nextBtnClicked.style.width = '175px';
+    } else {
+        nextBtnClicked.style.transform = 'scale(1,1)'
+        nextBtnClicked.style.marginTop = '40px';
+        nextBtnClicked.style.width = '320px';
+    }
+}
 
 /**
  * The countIncrement function adds one each time the function is called
  */
 function conutIncrement() {
     count++;
+    nextBtnSize()
     console.log("count", count)
     return count;
 }
@@ -88,6 +102,7 @@ function insertImage(){
         nextBtnClicked.innerHTML = "Play again!";
         questionImage.innerHTML = `<img id="quiz_image" src=" ${gameOverImage}" alt="#"> `;
         hideQuizBtns();
+        nextBtnSize();
     }else{
         questionImage.innerHTML = `<img id="quiz_image" src=" ${newImg}" alt="#"> `;
     }
@@ -155,26 +170,15 @@ function addToUserNameList() {
     changeToUserName.innerHTML = `<h2> ${userName}</h2>`;
 }
 
-/*function playAgainBtn() {
-    if(questions.length == count){
-        nextBtnClicked.innerHTML = "Play again!";
-        if(nextBtnClicked){
-            console.log("Play again has been clicked")
-        }
-    }
-}
-*/
-
 /* This function hide the quiz answer buttons */
 
 function hideQuizBtns() {
     if (nextBtnClicked) {
         quizAnswerContainer.style.display = "none";
-    } else {
-        quizAnswerContainer.style.display = "block";
-    }
+    } 
   }
 
+/* This function restarts the game when the Users clicks the play again button */
 function resetGame() {
     if(questions.length +1 == count ){
         window.location.href = "quiz.html";
@@ -183,10 +187,14 @@ function resetGame() {
     }
   }
 
+  function startGame() {
+        hideQuizBtns()
+  }
 
+hideQuizBtns()
 console.log("length: ", questions.length)
 console.log("count: ", count)
 
-conutIncrement
+conutIncrement()
 
 
