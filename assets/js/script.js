@@ -31,6 +31,8 @@ var questionTwo = document.getElementById("answer_two");
 var questionThree = document.getElementById("answer_three");
 var questionFour = document.getElementById("answer_four");
 var nextBtnClicked = document.getElementById("next_btn");
+var quizAnswerContainer = document.getElementById("button_group_container");
+var quizAnserBtns = document.getElementsByClassName("quiz_btns");
 
 var gameOverImage = "assets/images/quiz-images/game_over.jpg";
 var userName = [];
@@ -44,6 +46,7 @@ var newImg;
  */
 function nextQuestionBtn(){
     nextBtnClicked.innerHTML = "Next Question";
+    resetGame()
 }
 
 
@@ -62,7 +65,7 @@ nextBtnClicked.addEventListener('click', originalColor);
 nextBtnClicked.addEventListener('click', insertImage);
 
 /**
- * quiz answers add answers to button options
+ * This function changes the text in the multiple choice buttons to the appropriate answers.
  */
 function quizAnswers(){
     nextQuestionBtn()
@@ -84,6 +87,7 @@ function insertImage(){
     if(questions.length +1 == count ){
         nextBtnClicked.innerHTML = "Play again!";
         questionImage.innerHTML = `<img id="quiz_image" src=" ${gameOverImage}" alt="#"> `;
+        hideQuizBtns();
     }else{
         questionImage.innerHTML = `<img id="quiz_image" src=" ${newImg}" alt="#"> `;
     }
@@ -161,8 +165,23 @@ function addToUserNameList() {
 }
 */
 
+/* This function hide the quiz answer buttons */
 
-    
+function hideQuizBtns() {
+    if (nextBtnClicked) {
+        quizAnswerContainer.style.display = "none";
+    } else {
+        quizAnswerContainer.style.display = "block";
+    }
+  }
+
+function resetGame() {
+    if(questions.length +1 == count ){
+        window.location.href = "quiz.html";
+    } else {
+        quizAnswerContainer.style.display = "block";
+    }
+  }
 
 
 console.log("length: ", questions.length)
