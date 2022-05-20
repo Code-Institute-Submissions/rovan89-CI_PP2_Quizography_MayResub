@@ -26,7 +26,7 @@
             </div>
             <!-- The below buttons are the answer option for the quiz -->
             <div id="button_group_container">
-                <button class="quiz_btns" id="answer_one" onclick="checkUserAnswer(this.id)" aria-label="Answer one Button"></button>
+                <button class="quiz_btns" id="answer_one" value="1" onclick="checkUserAnswer(this.id)" aria-label="Answer one Button"></button>
                 <button class="quiz_btns" id="answer_two" onclick="checkUserAnswer(this.id)" aria-label="Answer two Button"></button>
                 <button class="quiz_btns" id="answer_three" onclick="checkUserAnswer(this.id)" aria-label="Answer three Button"></button>
                 <button class="quiz_btns" id="answer_four"  onclick="checkUserAnswer(this.id)" aria-label="Answer four Button"></button>
@@ -35,19 +35,21 @@
             <div id="next_btn"  onclick="quizAnswers()">Play Quiz!</div>
             <!-- The section below is for user feedback -->
             
-            <h3>Why Not Rate Us?</h3>
+            
             <form id="feedback_form">
-                <label for="rating_1">1</label>
-                <input type="radio" id="rating_1" class="radio_btns"><br/>
-                <label for="rating_2">2</label>
-                <input type="radio" id="rating_2" class="radio_btns">
-                <label for="rating_3">3</label>
-                <input type="radio" id="rating_3" class="radio_btns">
-                <label for="rating_4">4</label>
-                <input type="radio" id="rating_4" class="radio_btns">
-                <label for="rating_5">5</label>
-                <input type="radio" id="rating_5" class="radio_btns">
+                <h3>Why Not Rate Us?</h3>
+                <input class="radio-input" type="radio" name="user_rating_1" />
+                <label class="radio-label">1</label>
+                <input class="radio-input" type="radio" name="user_rating_1"  />
+                <label class="radio-label">2</label>
+                <input class="radio-input" type="radio" name="user_rating_1"  />
+                <label class="radio-label">3</label>
+                <input class="radio-input" type="radio" name="user_rating_1"  />
+                <label class="radio-label">4</label>
+                <input class="radio-input" type="radio" name="user_rating_1"  />
+                <label class="radio-label">5</label>
                 <button type="submit" class="submit_btn" id="feedback_submit_button" aria-label="Rating submit button">Submit</button>
+                    
             </form>
         </div>
     </div>
