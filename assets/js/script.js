@@ -1,28 +1,28 @@
 var questions = [
     {
-        image: "assets/images/quiz-images/movie_one.PNG",
-        answer: ["Bond", "The Matrix", "Happy Gilmore", "You"],
-        correctAnswer: "The Matrix"
+        image: "assets/images/quiz-images/paris.jpg",
+        answer: ["Rome", "Paris", "Los Angeles", "Moscow"],
+        correctAnswer: "Paris"
     },
     {
-        image: "assets/images/quiz-images/movie_two.jpg",
-        answer: ["Thor", "The Hulk", "Black Panther", "Captian America"],
-        correctAnswer: "Black Panther"
+        image: "assets/images/quiz-images/tower_bridge.jpg",
+        answer: ["New York", "Madrid", "Belfast", "London"],
+        correctAnswer: "London"
     },
     {
-        image: "assets/images/quiz-images/movie_three.jpg",
-        answer: ["Lockstock", "RocknRolla", "Snatch", "The Gentelmen"],
-        correctAnswer: "Snatch"
+        image: "assets/images/quiz-images/barcelona.jpg",
+        answer: ["Rio de Janeiro", "Cape Town", "Barcelona", "Edinburgh"],
+        correctAnswer: "Barcelona"
     },
     {
-        image: "assets/images/quiz-images/movie_four.jpg",
-        answer: ["The Untouchables", "American Gangster", "Black Mass", "Goodfellas"],
-        correctAnswer: "Goodfellas"
+        image: "assets/images/quiz-images/singapore.jpg",
+        answer: ["Singapore", "Budapest", "London", "Hong Kong"],
+        correctAnswer: "Singapore"
     },
     {
-        image: "assets/images/quiz-images/movie_five.jpg",
-        answer: ["50/50", "Don Jon", "500 Days Of Summer", "10 Things I hate About You"],
-        correctAnswer: "500 Days Of Summer"
+        image: "assets/images/quiz-images/phnom_penh.jpg",
+        answer: ["Brussels", "Phnom Penh", "Sydney", "Valletta"],
+        correctAnswer: "Phnom Penh"
     },
 ];
 var questionImage = document.getElementById("main_image_container");
@@ -37,7 +37,7 @@ var quizAnserBtns = document.getElementsByClassName("quiz_btns");
 var gameOverImage = "assets/images/quiz-images/game_over.jpg";
 var userName = [];
 var newVal = {};
-var count = 0;
+var count = -1;
 var score = 0;
 var newImg;
 
@@ -51,7 +51,7 @@ function nextQuestionBtn(){
 
 /* This function changes the size of the play button */
 function nextBtnSize() {
-    if(count == 1 || questions.length +1 == count){
+    if(count == 0 || questions.length +1 == count){
         nextBtnClicked.style.transform = 'scale(1.5,1.5)'
         nextBtnClicked.style.marginTop = '40px';
         nextBtnClicked.style.marginBottom = '40px';

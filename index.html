@@ -8,13 +8,16 @@
     <title>Enter User Details</title>
 </head>
 <body>
+    <header class="top_heading">
+        <h1>Quizography</h1>
+    </header>
     <div id="outer_user_name_container">
         <form>
             <div class="inner_user_name_container">
                 <label for="user_name" id="user_name_label">Enter User Name: </label>
                 <input type="text" id="user_name">
                 <div class="btn_container">
-                    <button type="submit" class="submit_btn" id="user_name_submit_button" onclick="addToUserNameList()" aria-label="User name submit button"><a href="quiz_instructions.html">Submit</a></button>
+                    <a type="submit" class="submit_btn" id="user_name_submit_button" onclick="addToUserNameList()" aria-label="User name submit button" href="quiz_instructions.html">Submit</a>
                 </div>
             </div>
         </form>
