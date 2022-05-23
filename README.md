@@ -19,8 +19,9 @@ Quizography is a quiz designed to test the users geography knowledge based on st
 5. [Features](#features)
     1. [Username submission section](#username_submission_section)
     2. [Scoring section](#scoring_section)
-    3. [Quiz section](#quiz_section)
-    4. [Quiz Rating section](#quiz_rating_section)
+    3. [Quiz Instructions](#quiz_instructions)
+    4. [Quiz section](#quiz_section)
+    5. [Quiz Rating section](#quiz_rating_section)
 6. [Testing](#testing)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
@@ -74,6 +75,11 @@ The website is structured to make an intuitive experience for the user.
 - This section allows the user to enter their user before the quiz begins
 
 ![Image of username submission section](assets/images/readme-images/username-input.PNG)
+
+### Quiz Instructions 
+- This section explains to the User what they must to to play the quiz.
+
+![Image of quiz instructions section](assets/images/readme-images/quiz_instructions.PNG)
 
 ### Scoring section
 - The scoring section keeps track of the users score based on the answers they have submitted
