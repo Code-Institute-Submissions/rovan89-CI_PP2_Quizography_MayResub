@@ -79,7 +79,6 @@ form {
 }
 
 form .user_name_label {
-    font-weight: 300px;
     font-size: large;
 }
 /* Submit Button */
@@ -108,7 +107,7 @@ form .user_name_label {
 /*--------quiz_instructions.html---------------------------------------------------------------*/
 
 .main_quiz_instructions_container {
-    background: blcak;
+    background: black;
     width: 100%;
     height: 100vh;
     position: relative;
