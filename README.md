@@ -1,5 +1,8 @@
 # Quizography
 Quizography is a quiz designed to test the users geography knowledge based on still images from a number of cities. Each question is multiple choice, there are four options to choose from. The site has an intuitive design to allow any user to easily understand the concept. The user will be scored so they can try to beat their top scores or play with others to see who has the best movie knowledge.
+
+Live website: https://rovan89.github.io/CI_PP2_Quizography/
+
 ![Image of responsive design](assets/images/readme-images/responsive.PNG)
 
 ## Table of Content
@@ -115,9 +118,9 @@ The website is structured to make an intuitive experience for the user.
 ### Performance
 ### HTML
 
+- No errors returned when checking site through W3C Validator
 ![Image of HTML validation](assets/images/readme-images/html-val.PNG)
 
-- No errors returned when checking site through W3C Validator
 
 ### CSS
 - No errors found when stie was run through W3C CSS Validator
