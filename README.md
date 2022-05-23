@@ -8,7 +8,7 @@ Quizography is a quiz designed to test the users geography knowledge based on st
     2. [User Stories](#user-stories)
         1. [Site Owner](#site-owner)
         2. [User](#user)
-3. [Design](#design) #######################################################################
+3. [Design](#design) 
     1. [Design Choices](#design-choices)
     2. [Colour](#colours)
     3. [Fonts](#fonts)
@@ -71,7 +71,7 @@ The website is structured to make an intuitive experience for the user.
 ## Features
 
 ### Username submission section
-    - This section allows the user to enter their user before the quiz begins
+- This section allows the user to enter their user before the quiz begins
 
 ![Image of username submission section](assets/images/readme-images/username-input.PNG)
 
