@@ -128,6 +128,7 @@ function checkUserAnswer(clicked_id){
         clicked_answer.style.backgroundColor = "red";
     }
     disableQuizBtns()
+    displayUserName()
 }
 /**
  * These functions disable and enable the quiz buttons
@@ -165,14 +166,18 @@ function enableQuizBtns() {
  */
 function addToUserNameList() {
     var userInput = document.getElementById("user_name").value;
-    userName.push(userInput);
-    console.log(userName);
-
+    userName = userName.push(userInput);
+    console.log("This is the username: ", userName);
+    displayUserName()
+    /*
     var changeToUserName = document.getElementById("user_name_container");
     changeToUserName.innerHTML = `<h2> ${userName}</h2>`;
+    */
+    return userName
 }
 
-/* This function hide the quiz answer buttons */
+
+/* This function hides the quiz answer buttons */
 
 function hideQuizBtns() {
     if (nextBtnClicked) {
@@ -180,6 +185,7 @@ function hideQuizBtns() {
     } 
   }
 
+/* These functions hide and unhide the raing section */
 function hideRatingBtns() {
         rating_btns.style.display = "none";
     }
@@ -189,6 +195,7 @@ function showRatingBtns() {
     }
     
 hideRatingBtns()
+
 /* This function restarts the game when the Users clicks the play again button */
 function resetGame() {
     if(questions.length +1 == count ){
@@ -198,9 +205,6 @@ function resetGame() {
     }
   }
 
-  function startGame() {
-        hideQuizBtns()
-  }
 
 hideQuizBtns()
 console.log("length: ", questions.length)

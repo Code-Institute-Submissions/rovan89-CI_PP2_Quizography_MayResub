@@ -1,5 +1,5 @@
 # Quizography
-Quizography is a quiz designed to test the users geography knowledge based on still images from a number of cities. Each question is multiple choice, there are four options to choose from. The site has an intuitive design to allow any user to easily understand the concept. The user will be scored so they can try to beat their top scores or play with others to see who has the best movie knowledge.
+Quizography is a quiz designed to test the users geography knowledge based on still images from a number of cities. Each question is multiple choice, there are four options to choose from. The site has an intuitive design to allow any user to easily understand the concept. The user will be scored so they can try to beat their top scores or play with others to see who has the best geography knowledge.
 
 Live website: https://rovan89.github.io/CI_PP2_Quizography/
 
@@ -140,7 +140,6 @@ The website is structured to make an intuitive experience for the user.
     - In the GitHub repository, navigate to the Settings tab
     - From the source section drop-down menu, select the Master Branch
     - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-Link to live site:  https://rovan89.github.io/Guess_The_Movie/ 
 
 ## Bugs
 | **Feature / Function** | **Expected Result** | **Actual Result** | **Action** |
