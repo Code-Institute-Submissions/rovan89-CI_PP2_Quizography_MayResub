@@ -152,10 +152,10 @@ function enableQuizBtns() {
  * originalColor resets the color to white for the next set of answers
  */
  function originalColor(){
-    questionOne.style.backgroundColor = "navy";
-    questionTwo.style.backgroundColor = "navy";
-    questionThree.style.backgroundColor = "navy";
-    questionFour.style.backgroundColor = "navy";
+    questionOne.style.backgroundColor = "#0080FF";
+    questionTwo.style.backgroundColor = "#0080FF";
+    questionThree.style.backgroundColor = "#0080FF";
+    questionFour.style.backgroundColor = "#0080FF";
 }
 
 /**
