@@ -17,6 +17,10 @@ Quizography is a quiz designed to test the users geography knowledge based on st
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks-&-tools)
 5. [Features](#features)
+    1. [Username submission section](#username_submission_section)
+    2. [Scoring section](#scoring_section)
+    3. [Quiz section](#quiz_section)
+    4. [Quiz Rating section](#quiz_rating_section)
 6. [Testing](#testing)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
@@ -47,6 +51,11 @@ Quizography is a quiz designed to test the users geography knowledge based on st
 
 ## Design
 ### Colour
+- Website background: black
+- Navigation button: border gold (#FFC300), background colour blue (#0080FF) and white text
+- Users score: background colour gold (#FFC300) and text colour black
+- Quiz answer option buttons: border gold (#FFC300), background colour blue (#0080FF) and white text
+- Rating section: border gold (#FFC300), background colour blue (#0080FF) and white text
 
 ### Fonts
 - The font used for this website is Outfit, sourced from Google Fonts
@@ -61,26 +70,24 @@ The website is structured to make an intuitive experience for the user.
 
 ## Features
 
-### Existing Features
-
-#### Username submission section
+### Username submission section
     - This section allows the user to enter their user before the quiz begins
 
 ![Image of username submission section](assets/images/readme-images/username-input.PNG)
 
-#### Scoring section
+### Scoring section
 - The scoring section keeps track of the users score based on the answers they have submitted
 
 ![Image of scoring system](assets/images/readme-images/scoringsystem.PNG)
 
-#### Quiz section
+### Quiz section
 - The quiz section holds the main quiz which consists of the image and answer options
 - The image will change every time the user clicks the next button and moves on to the next question
 - The answers section holds four different answer options to choose from. If the user clicks the correct answer the selection button will turn green and a point will be added to their overall score, if incorrect the button will turn red and the user will not gain a point.
 
 ![Image of quiz section](assets/images/readme-images/main-quiz-section.PNG)
 
-#### Quiz Rating section
+### Quiz Rating section
 - The rating section allows users to rate the quiz from 1-5 based on their experience. This feedback will also help on improving the quiz in the future.
 
 ![Image of rating section](assets/images/readme-images/rating-section.PNG)
