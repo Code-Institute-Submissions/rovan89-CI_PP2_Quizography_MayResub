@@ -66,8 +66,8 @@ form {
     top: 20%;
     height: 300px;
     width: 300px;
-    border: 5px solid #FFFF00;
-    background: blue;
+    border: 5px solid #FFC300;
+    background: #0080FF;
     text-align: center;
 }
 
@@ -93,9 +93,9 @@ form .user_name_label {
 }
 
 .submit_btn {
-    border: 2px solid gold;
+    border: 2px solid #FFC300;
     border-radius: 50px;
-    background: navy;
+    background: #0080FF;
     color: white;
     width: 10rem;
     height: 2rem;
@@ -116,7 +116,7 @@ form .user_name_label {
 
 .main_quiz_instructions_container, .play_quiz_btn, .instructions_container {
     position: absolute;
-    border: 5px solid #FFFF00;
+    border: 5px solid #FFC300
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -124,7 +124,7 @@ form .user_name_label {
 }
 
 .instructions_container {
-    background: blue;
+    background: #0080FF;
     height: 50vh;
     width: 50%;
     padding-bottom: 50px;
@@ -132,7 +132,7 @@ form .user_name_label {
 
 .instructions_container p {
     color: white;
-    background: blue;
+    background: #0080FF;
     height: 50%;
     position: absolute;
     top: 50%;
@@ -144,7 +144,7 @@ form .user_name_label {
 .play_quiz_btn {
     margin-top: 150px;
     margin-left: 0;
-    border: 2px solid #FFFF00;;
+    border: 2px solid #FFC300;
 }
 
 /*-------------------------------------------------------------quiz.html----------*/
@@ -176,7 +176,7 @@ form .user_name_label {
 #score_count, p {
     width: 50%;
     height: 30px;
-    background: orange;
+    background: #FFC300;
 }
 
 
@@ -208,9 +208,9 @@ img {
 }
 
 .quiz_btns {
-    border: 3px solid gold;
+    border: 3px solid #FFC300;
     border-radius: 50px;
-    background: navy;
+    background: #0080FF;
     color: white;
     height: 30px;
     width: 320px;
@@ -224,8 +224,10 @@ img {
 /* Next Button */
 
 #next_btn {
-    color: black;
-    background:orange;
+    border: 3px solid #FFC300;
+    border-radius: 50px;
+    background: #0080FF;
+    color: white;
     height: 30px;
     width: 320px;
     margin-top: 5px;
