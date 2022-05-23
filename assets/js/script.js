@@ -33,6 +33,7 @@ var questionFour = document.getElementById("answer_four");
 var nextBtnClicked = document.getElementById("next_btn");
 var quizAnswerContainer = document.getElementById("button_group_container");
 var quizAnserBtns = document.getElementsByClassName("quiz_btns");
+var rating_btns = document.getElementById("feedback_form");
 
 var gameOverImage = "assets/images/quiz-images/game_over.jpg";
 var userName = [];
@@ -103,6 +104,7 @@ function insertImage(){
         questionImage.innerHTML = `<img id="quiz_image" src=" ${gameOverImage}" alt="#"> `;
         hideQuizBtns();
         nextBtnSize();
+        showRatingBtns();
     }else{
         questionImage.innerHTML = `<img id="quiz_image" src=" ${newImg}" alt="#"> `;
     }
@@ -178,6 +180,15 @@ function hideQuizBtns() {
     } 
   }
 
+function hideRatingBtns() {
+        rating_btns.style.display = "none";
+    }
+
+function showRatingBtns() {
+        rating_btns.style.display = "block";
+    }
+    
+hideRatingBtns()
 /* This function restarts the game when the Users clicks the play again button */
 function resetGame() {
     if(questions.length +1 == count ){
